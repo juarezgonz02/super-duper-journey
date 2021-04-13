@@ -61,7 +61,7 @@ namespace Lab03
             });
 
              if(ArrivingBooking == null)
-                Console.WriteLine("error: Code not found or not arrived yet");
+                Console.WriteLine("error: Code not found or not arrived yet\n");
             else 
                 //Si no es null se piden las cosas dadas
                 ArrivingBooking.TakeTheKey();
@@ -84,7 +84,7 @@ namespace Lab03
             });
 
             if(ArrivingBooking == null)
-                Console.WriteLine("error: Code not found");
+                Console.WriteLine("error: Code not found\n");
             else 
                 //Se da una llave
                 ArrivingBooking.GiveAkey();
@@ -133,7 +133,7 @@ namespace Lab03
 
                     //Error case
                     default:
-                        Console.WriteLine("error: no option selected");
+                        Console.WriteLine("error: no option selected\n");
                         break;
                 }
             }

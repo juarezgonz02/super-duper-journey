@@ -10,7 +10,7 @@ namespace Lab03
             InitDate = ReservatedDate.ToString("d");
             LastDate = ReservatedDate.AddDays(pDuration).ToString("d");
             Rooms = new Random().Next(2,4);
-            Price = Math.Round((new Random().NextDouble())*75 + 60.99,2);
+            Price = Math.Round(((new Random().NextDouble())* 75 * pDuration) + 60.99,2);
             
             //Se procede al pago
             this.Pay();

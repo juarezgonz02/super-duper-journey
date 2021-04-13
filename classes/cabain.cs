@@ -18,7 +18,7 @@ namespace Lab03
             Rooms = new Random().Next(2,4);
 
             //El precio minimo es de 35.99, segun cuantos dias se queda, el precio aumenta 
-            Price = Math.Round((new Random().NextDouble())*50 * pDuration + 35.99,2); 
+            Price = Math.Round(((new Random().NextDouble())* 50 * pDuration) + 35.99,2); 
            
             //Se procede al pago            
             this.Pay();

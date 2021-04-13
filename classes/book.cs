@@ -47,7 +47,7 @@
                     noExit = false; 
                 }
                 else
-                    Console.WriteLine("---- error: no option");
+                    Console.WriteLine("---- error: no option\n");
             }
             while(noExit);
             
